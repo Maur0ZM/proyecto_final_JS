@@ -1,78 +1,181 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
-.header{
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    .nav{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        .ul{
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-        }
-    }
+
+.header {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    position: fixed; /* Fijar el header en la parte superior */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Pegar en la parte superior */
+    z-index: 1000; /* Asegurar que esté sobre otros elementos */
 }
 
-main{
+.header .nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header .nav .ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+main {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
-    margin: 30px 0px 30px 0px;
-    .divCont{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        width: 80%;
-        .divBotones{
-            display: flex;
-            justify-content: center;
-            gap: 65px;
-            button{
-                border: none;
-                font-size: 20px;
-            }
-        }
-        .contProductos{
-            display: flex;
-            width: 100%;
-            flex-wrap: wrap;
-            gap: 10px;
-            .producto{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 300px;
-                border: solid 1px;
-                gap: 5px;
-                padding: 5px;
-                .imagenProducto{
-                    width: 120px;
-                    height: 150px;
-                }
-                button {
-                    margin-top: auto; /* Mover el botón hacia la parte inferior */
-                    padding: 10px 20px;
-                    background-color: #007BFF;
-                    color: white;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+    margin: 80px 0px 30px 0px;
 }
+
+main .divCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+}
+
+main .divCont .divBotones {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+}
+
+main .divCont .divBotones button {
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+main .divCont .divBotones button:hover {
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main .divCont .divAlerta {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .divCont .contProductos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main .divCont .contProductos .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: solid 1px;
+    gap: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+main .divCont .contProductos .producto:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+main .divCont .contProductos .producto .imagenProducto {
+    width: 120px;
+    height: 150px;
+}
+
+main .divCont .contProductos .producto button {
+    margin-top: auto; /* Mover el botón hacia la parte inferior */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    position: relative;
+    padding: 10px 20px; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    bottom: 0; /* Pegar en la parte inferior */
+    z-index: 1000; /* Asegurar que esté sobre otros elementos */
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos personalizados para los botones de SweetAlert2 */
+
+.swal2-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Ajusta el valor según necesites */
+}
+
+.swal2-confirm {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.swal2-cancel {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.swal2-confirm:hover,
+.swal2-cancel:hover {
+    opacity: 0.8;
+}
+
