@@ -7,46 +7,24 @@ const contPaginas = {
         inicio:`<li><a href="">Inicio</a></li>
                 <li><a href="./pages/productos.html">Productos</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/ubicacion.html">Ubicación</a></li>
-                <li><a href="./pages/sesion.html">Inicio de sesión</a></li>
                 <li><a href="./pages/carrito.html"><img src="./assent/img/carrito.png" alt=""></a></li>
 
     `,
         productos:`<li><a href="../index.html">Inicio</a></li>
                     <li><a href="">Productos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="ubicacion.html">Ubicación</a></li>
-                    <li><a href="sesion.html">Inicio de sesión</a></li>
                     <li><a href="carrito.html"><img src="../assent/img/carrito.png" alt=""></a></li>
 
     `,
         contacto: `<li><a href="../index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="">Contacto</a></li>
-                    <li><a href="ubicacion.html">Ubicación</a></li>
-                    <li><a href="sesion.html">Inicio de sesión</a></li>
                     <li><a href="carrito.html"><img src="../assent/img/carrito.png" alt=""></a></li>
 
-    `,
-        ubicacion: `<li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="">Ubicación</a></li>
-                    <li><a href="sesion.html">Inicio de sesión</a></li>
-                    <li><a href="carrito.html"><img src="../assent/img/carrito.png" alt=""></a></li>
-    `,  
-        sesion: `   <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="ubicacion.html">Ubicación</a></li>
-                    <li><a href="">Inicio de sesión</a></li>
-                    <li><a href="carrito.html"><img src="../assent/img/carrito.png" alt=""></a></li>
-    `,
+    `, 
         carrito: `  <li><a href="../index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="ubicacion.html">Ubicación</a></li>
-                    <li><a href="sesion.html">Inicio de sesión</a></li>
                     <li><a href=""><img src="../assent/img/carrito.png" alt=""></a></li>
     `
 }
@@ -69,12 +47,6 @@ switch (window.location.pathname) {
         break;
     case '/pages/contacto.html':
         ul.innerHTML = contPaginas.contacto;
-        break;
-    case '/pages/ubicacion.html':
-        ul.innerHTML = contPaginas.ubicacion;
-        break;
-    case '/pages/sesion.html':
-        ul.innerHTML = contPaginas.sesion;
         break;
     case '/pages/carrito.html':
         ul.innerHTML = contPaginas.carrito;

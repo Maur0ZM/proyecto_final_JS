@@ -64,6 +64,7 @@ main .divCont .divBotones button {
     background-color: #333;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 main .divCont .divBotones button:hover {
@@ -179,3 +180,104 @@ main .divCont .contProductos .producto button {
     opacity: 0.8;
 }
 
+#map {
+    width: 500px;
+    height: 500px;
+}
+
+.contContacto {
+    margin: 150px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articuloContacto {
+    width: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#formContacto {
+    width: 100%;
+}
+
+#formContacto label {
+    margin-bottom: 10px;
+}
+
+
+#formContacto input[type="text"],
+#formContacto textarea {
+    width: 100%; /* O ajusta el ancho según tus necesidades */
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+#comentario {
+    height: 150px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#carouselExampleCaptions{
+    height: 1000px;
+}
+
+.indexCont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.carruselCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenCont{
+    width: 100%;
+}
+
+.imagenIndex{
+    width: 300px;
+    height: 250px;
+}
+
+.imagenIndex2{
+    width: 100%;
+    height: 500px;
+}
+
+.enlace-estilizado {
+    color: blue;
+    text-decoration: none; /* para quitar el subrayado por defecto */
+    font-weight: bold;
+}
+
+.enlace-estilizado:hover {
+    color: darkblue; /* cambiar color al pasar el ratón */
+    text-decoration: underline;
+}

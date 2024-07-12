@@ -82,6 +82,7 @@ function crearProductoDiv(producto, index) {
 
     const imagenP = document.createElement("img");
     imagenP.src = `${producto.imagen}`;
+    imagenP.classList.add("imagenProducto");
 
     const cantidadP = document.createElement("p");
     cantidadP.innerHTML = `Cantidad: ${producto.cantidad}`;
