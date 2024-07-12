@@ -186,7 +186,7 @@ main .divCont .contProductos .producto button {
 }
 
 .contContacto {
-    margin: 150px 0;
+    margin: 280px 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -255,6 +255,7 @@ button[type="submit"]:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 30px 0px;
 }
 
 .imagenCont{
