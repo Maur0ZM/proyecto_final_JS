@@ -6,22 +6,22 @@ const contPaginas = {
     inicio: `<li><a href="/proyecto_final_JS/">Inicio</a></li>
              <li><a href="/proyecto_final_JS/pages/productos.html">Productos</a></li>
              <li><a href="/proyecto_final_JS/pages/contacto.html">Contacto</a></li>
-             <li><a href="/proyecto_final_JS/pages/carrito.html"><img src="/proyecto_final_JS/assets/img/carrito.png" alt=""></a></li>
+             <li><a href="/proyecto_final_JS/pages/carrito.html"><img src="/proyecto_final_JS/assent/img/carrito.png" alt=""></a></li>
     `,
     productos: `<li><a href="/proyecto_final_JS/">Inicio</a></li>
                 <li><a href="/proyecto_final_JS/pages/productos.html">Productos</a></li>
                 <li><a href="/proyecto_final_JS/pages/contacto.html">Contacto</a></li>
-                <li><a href="/proyecto_final_JS/pages/carrito.html"><img src="/proyecto_final_JS/assets/img/carrito.png" alt=""></a></li>
+                <li><a href="/proyecto_final_JS/pages/carrito.html"><img src="/proyecto_final_JS/assent/img/carrito.png" alt=""></a></li>
     `,
     contacto: `<li><a href="/proyecto_final_JS/">Inicio</a></li>
                <li><a href="/proyecto_final_JS/pages/productos.html">Productos</a></li>
                <li><a href="/proyecto_final_JS/pages/contacto.html">Contacto</a></li>
-               <li><a href="/proyecto_final_JS/pages/carrito.html"><img src="/proyecto_final_JS/assets/img/carrito.png" alt=""></a></li>
+               <li><a href="/proyecto_final_JS/pages/carrito.html"><img src="/proyecto_final_JS/assent/img/carrito.png" alt=""></a></li>
     `,
     carrito: `<li><a href="/proyecto_final_JS/">Inicio</a></li>
               <li><a href="/proyecto_final_JS/pages/productos.html">Productos</a></li>
               <li><a href="/proyecto_final_JS/pages/contacto.html">Contacto</a></li>
-              <li><a href="/proyecto_final_JS/pages/carrito.html"><img src="/proyecto_final_JS/assets/img/carrito.png" alt=""></a></li>
+              <li><a href="/proyecto_final_JS/pages/carrito.html"><img src="/proyecto_final_JS/assent/img/carrito.png" alt=""></a></li>
     `
 };
 
