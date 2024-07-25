@@ -69,7 +69,7 @@ const mostrarCarrusel = () => {
                 <p><strong>Precio:</strong> $${productoActual.precio}</p>
                 <p><strong>Condicion:</strong> ${productoActual.condicion}</p>
                 <p><strong>Tienda oficial:</strong> ${productoActual.tiendaOficial}</p>
-                <a href="${productoActual.linkMercadoLibre}" class="enlace-estilizado">Más informacion en mercadolibre.com</a>
+                <a href="${productoActual.linkMercadoLibre}" class="enlace-estilizado" target="_blank">Más informacion en mercadolibre.com</a>
             `,
             showCloseButton: true,
             showClass: {
